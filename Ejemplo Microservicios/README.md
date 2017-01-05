@@ -9,7 +9,7 @@ This project is a simple example of microservices running on docker to produce a
 
 # Running the demo
 
-`fig up`
+`docker-compose up`
 
 Then once things appear to be working, visit the following url:
 
@@ -35,5 +35,5 @@ When you run `fig up`, the following happens:
 
 # Starting multiple producers/workers
 
-    fig start rabbitmq
-    fig scale producer=[num producers] worker=[num workers]
+    docker-compose start rabbitmq
+    docker-compose scale producer=[num producers] worker=[num workers]
